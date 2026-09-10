@@ -182,5 +182,4 @@
 .animate-reveal { animation: reveal .9s cubic-bezier(.22, 1, .36, 1) both; }
 @keyframes reveal { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 640px) { .hero-overlay { background: linear-gradient(0deg, oklch(0.12 0.01 60 / 92%) 0%, oklch(0.12 0.01 60 / 42%) 75%), linear-gradient(90deg, oklch(0.12 0.01 60 / 52%), transparent); } }
-@media (min-width: 640px) { @utility content-wrap { width: min(100% - 4rem, 80rem); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
