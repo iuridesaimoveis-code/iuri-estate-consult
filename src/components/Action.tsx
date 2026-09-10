@@ -3,11 +3,11 @@ import { ArrowUpRight } from "lucide-react";
 
 const styles = {
   primary:
-    "group inline-flex min-h-12 items-center justify-center gap-3 border border-primary bg-primary px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+    "group inline-flex min-h-12 items-center justify-center gap-3 border border-primary bg-primary px-6 py-3 text-center text-xs font-semibold uppercase text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
   outline:
-    "group inline-flex min-h-12 items-center justify-center gap-3 border border-border bg-transparent px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-foreground transition-colors hover:border-primary hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+    "group inline-flex min-h-12 items-center justify-center gap-3 border border-border bg-transparent px-6 py-3 text-center text-xs font-semibold uppercase text-foreground transition-colors hover:border-primary hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
   light:
-    "group inline-flex min-h-12 items-center justify-center gap-3 border border-hero-border bg-hero-foreground px-6 py-3 text-center text-xs font-semibold uppercase tracking-[0.12em] text-hero transition-colors hover:bg-hero-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
+    "group inline-flex min-h-12 items-center justify-center gap-3 border border-hero-border bg-hero-foreground px-6 py-3 text-center text-xs font-semibold uppercase text-hero transition-colors hover:bg-hero-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring",
 } as const;
 
 type Variant = keyof typeof styles;
