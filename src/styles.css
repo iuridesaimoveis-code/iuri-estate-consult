@@ -19,8 +19,8 @@
  */
 
 @theme inline {
-  --font-sans: "DM Sans", sans-serif;
-  --font-display: "Libre Caslon Display", serif;
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-display: "Libre Baskerville", serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -174,7 +174,7 @@
 @utility section-space { padding-block: clamp(5rem, 9vw, 9rem); }
 @utility section-title { margin-top: 1rem; max-width: 48rem; font-family: var(--font-display); font-size: clamp(2.4rem, 5vw, 4.5rem); line-height: 1.04; }
 @utility section-lead { max-width: 43rem; font-size: 1.05rem; line-height: 1.85; color: var(--color-muted-foreground); }
-@utility eyebrow { font-size: .72rem; line-height: 1.2; font-weight: 600; text-transform: uppercase; color: var(--color-accent); }
+@utility eyebrow { font-size: .68rem; line-height: 1.2; font-weight: 600; text-transform: uppercase; color: var(--color-accent); }
 @utility form-label { display: block; font-size: .74rem; font-weight: 600; text-transform: uppercase; color: var(--color-foreground); }
 @utility form-input { margin-top: .55rem; width: 100%; border: 0; border-bottom: 1px solid var(--color-input); background: transparent; padding: .8rem 0; font-size: .95rem; font-weight: 400; text-transform: none; outline: none; transition: border-color .2s ease; &::placeholder { color: var(--color-muted-foreground); } &:focus { border-color: var(--color-accent); } }
 
