@@ -23,27 +23,27 @@ const whatsappUrl = (message: string) =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
 
 const services = [
-  { number: "01", title: "Comprar", text: "Encontro de imóveis, análise das opções, negociação e orientação durante todo o processo." },
-  { number: "02", title: "Vender", text: "Avaliação, estratégia de comercialização, divulgação, atendimento aos interessados e negociação." },
-  { number: "03", title: "Alugar", text: "Intermediação da locação, análise do processo, negociação e acompanhamento até a conclusão." },
+  { number: "01", title: "Comprar", text: "Seleção de imóveis, análise das opções e orientação para uma escolha bem fundamentada." },
+  { number: "02", title: "Vender", text: "Avaliação, posicionamento, divulgação e condução das tratativas com os interessados." },
+  { number: "03", title: "Alugar", text: "Intermediação da locação, análise das condições e condução do processo até a conclusão." },
 ];
 
 const stages = [
   { icon: SearchCheck, title: "Análise e estratégia", text: "Leitura de mercado e posicionamento do imóvel." },
-  { icon: WalletCards, title: "Financeiro", text: "Financiamento, crédito e condições de pagamento." },
-  { icon: Scale, title: "Jurídico", text: "Questões jurídicas e contratuais da negociação." },
-  { icon: FileCheck2, title: "Documentação", text: "Reunião e conferência dos documentos exigidos." },
-  { icon: Landmark, title: "Cartório", text: "Assessoria nas etapas de registro e escritura." },
-  { icon: Handshake, title: "Negociação", text: "Intermediação entre as partes até a conclusão." },
+  { icon: WalletCards, title: "Financeiro", text: "Orientação sobre crédito, financiamento e condições de pagamento." },
+  { icon: Scale, title: "Jurídico", text: "Orientação sobre questões contratuais e conexão com profissionais habilitados." },
+  { icon: FileCheck2, title: "Documentação", text: "Organização e conferência dos documentos necessários." },
+  { icon: Landmark, title: "Cartório", text: "Orientação e acompanhamento nas etapas de escritura, registro e documentação do imóvel." },
+  { icon: Handshake, title: "Negociação", text: "Intermediação profissional entre as partes." },
 ];
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Iuri de Sá | Compra, Venda e Locação de Imóveis" },
-      { name: "description", content: "Corretor de imóveis para compra, venda e locação, com apoio financeiro, jurídico, documental e cartorial em toda a negociação." },
+      { name: "description", content: "Iuri de Sá, corretor de imóveis em Campinas e região, atua na compra, venda e locação com orientação financeira, jurídica e documental." },
       { property: "og:title", content: "Iuri de Sá | Corretor de Imóveis" },
-      { property: "og:description", content: "Compra, venda e locação com atendimento próximo e condução profissional em todas as etapas." },
+      { property: "og:description", content: "Compra, venda e locação em Campinas e região com atendimento próximo e estrutura profissional." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -86,12 +86,12 @@ function Index() {
           <div className="max-w-4xl animate-reveal">
             <p className="mb-6 flex items-center gap-3 text-xs font-semibold uppercase text-accent"><span className="h-px w-10 bg-accent" /> Consultoria imobiliária completa</p>
             <h1 className="max-w-4xl font-display text-[clamp(2.65rem,5.8vw,5.4rem)] leading-[1.01]">Seu imóvel merece uma negociação feita por quem entende de todo o processo.</h1>
-            <p className="mt-7 max-w-xl text-base leading-7 text-hero-muted sm:text-lg">Compra, venda e locação de imóveis com acompanhamento completo, do primeiro contato à conclusão do negócio.</p>
+            <p className="mt-7 max-w-xl text-base leading-7 text-hero-muted sm:text-lg">Compra, venda e locação de imóveis com orientação próxima, do primeiro contato à conclusão do negócio.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ActionLink variant="light" href={whatsappUrl("Olá, Iuri! Quero comprar ou alugar um imóvel.")} target="_blank" rel="noreferrer">Quero comprar ou alugar</ActionLink>
               <ActionLink variant="outline" className="border-hero-border text-hero-foreground hover:bg-hero-soft" href={whatsappUrl("Olá, Iuri! Quero vender ou alugar meu imóvel.")} target="_blank" rel="noreferrer">Quero vender ou alugar meu imóvel</ActionLink>
             </div>
-            <p className="mt-7 border-l border-accent pl-4 text-xs leading-5 text-hero-muted">Compra • Venda • Locação • 5 anos de mercado imobiliário</p>
+            <p className="mt-7 border-l border-accent pl-4 text-xs leading-5 text-hero-muted">Compra • Venda • Locação • Campinas e região</p>
           </div>
         </div>
         <a href="#atuacao" aria-label="Conheça a atuação" className="absolute bottom-7 right-7 z-10 hidden items-center gap-3 text-xs uppercase text-hero-muted lg:flex">Conheça a atuação <ArrowDown className="size-4" /></a>
@@ -101,7 +101,7 @@ function Index() {
         <div className="content-wrap">
           <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-24">
             <div><p className="eyebrow">O que eu faço</p><h2 className="section-title">Compra, venda e locação conduzidas de perto.</h2></div>
-            <p className="section-lead lg:pt-10">Uma negociação imobiliária envolve valores, documentação, financiamento, contratos e análise. Meu trabalho é conduzir cada etapa e reunir os profissionais necessários para que o processo aconteça com segurança e clareza.</p>
+            <p className="section-lead lg:pt-10">Cada objetivo pede uma leitura cuidadosa do imóvel, do mercado e das condições envolvidas. Meu papel é organizar o caminho, antecipar decisões e aproximar as pessoas certas para cada necessidade.</p>
           </div>
           <div className="mt-16 grid border-t border-border lg:grid-cols-3">
             {services.map((service, index) => <article key={service.title} className={`group py-10 lg:min-h-96 lg:px-10 lg:py-12 ${index ? "border-t border-border lg:border-l lg:border-t-0" : ""}`}><span className="text-xs text-accent">{service.number}</span><h3 className="mt-20 font-display text-5xl">{service.title}</h3><p className="mt-6 max-w-sm leading-7 text-muted-foreground">{service.text}</p><div className="mt-10 h-px w-12 bg-accent transition-all duration-500 group-hover:w-24" /></article>)}
@@ -112,7 +112,7 @@ function Index() {
       <section id="etapas" className="section-space bg-primary text-primary-foreground">
         <div className="content-wrap relative">
           <span aria-hidden="true" className="pointer-events-none absolute -right-8 -top-28 hidden select-none font-display text-[18rem] text-primary-foreground/[0.025] lg:block">IS</span>
-          <div className="relative grid gap-12 lg:grid-cols-12"><div className="lg:col-span-7"><p className="eyebrow text-accent">Estrutura para negociar</p><h2 className="section-title max-w-3xl">Um atendimento.<br /><em className="font-normal text-accent">Todas as etapas.</em></h2></div><p className="max-w-md self-end border-l border-primary-border pl-6 leading-7 text-primary-muted lg:col-span-4 lg:col-start-9">Da escolha do imóvel ao cartório, cada fase da negociação tem assessoria e um responsável ao seu lado.</p></div>
+           <div className="relative grid gap-12 lg:grid-cols-12"><div className="lg:col-span-7"><p className="eyebrow text-accent">Estrutura para negociar</p><h2 className="section-title max-w-3xl">Um atendimento.<br /><em className="font-normal text-accent">Todas as etapas.</em></h2></div><p className="max-w-md self-end border-l border-primary-border pl-6 leading-7 text-primary-muted lg:col-span-4 lg:col-start-9">Da análise inicial ao fechamento, cada frente é conduzida com organização e, quando necessário, profissionais habilitados.</p></div>
           <div className="relative mt-16 grid border-t border-primary-border sm:grid-cols-2 lg:grid-cols-3">
             {stages.map(({ icon: Icon, title, text }) => (
               <article key={title} className="flex items-start gap-4 border-b border-primary-border py-7 lg:px-8">
@@ -126,17 +126,23 @@ function Index() {
 
       <section id="sobre" className="section-space">
         <div className="content-wrap grid items-center gap-14 lg:grid-cols-12 lg:gap-8">
-          <div className="relative lg:col-span-5 lg:col-start-2">
-            <div className="aspect-[4/5] overflow-hidden bg-secondary"><img src={portraitAsset.url} alt="Iuri de Sá, corretor de imóveis" width={800} height={800} loading="lazy" className="size-full object-cover object-top grayscale-[18%] contrast-[1.04]" /></div>
-            <div className="absolute -bottom-7 -right-4 border border-border bg-background p-6 sm:-right-10 sm:p-8"><p className="font-display text-2xl">CRECI 184010</p><div className="mt-3 h-px w-8 bg-accent" /></div>
+          <div className="lg:col-span-5 lg:col-start-2">
+            <div className="aspect-[4/5] overflow-hidden bg-secondary"><img src={portraitAsset.url} alt="Iuri de Sá, corretor de imóveis em Campinas e região" width={800} height={800} loading="lazy" className="size-full object-cover object-top grayscale-[10%] contrast-[1.03]" /></div>
+            <div className="flex items-center justify-between border-b border-border py-4 text-[10px] font-semibold uppercase text-muted-foreground"><span>Iuri de Sá</span><span>CRECI 184010</span></div>
           </div>
           <div className="lg:col-span-5 lg:col-start-8">
             <p className="eyebrow">Sobre Iuri</p>
             <h2 className="mt-5 font-display text-5xl sm:text-6xl">Iuri de Sá</h2>
             <p className="mt-3 text-xs font-semibold uppercase text-accent">Corretor de Imóveis | CRECI 184010</p>
-            <blockquote className="mt-10 border-l border-border pl-7 font-display text-2xl leading-relaxed text-muted-foreground sm:text-3xl">“Entender o objetivo de cada cliente e conduzir a negociação com clareza, segurança e proximidade.”</blockquote>
-            <p className="mt-8 leading-7 text-muted-foreground">São 5 anos de atuação no mercado imobiliário, sendo 3 deles como gerente de imobiliária, à frente de uma equipe de 10 corretores. Essa vivência em gestão e negociação é o que trago para cada atendimento.</p>
-            <ActionLink className="mt-10" href={whatsappUrl("Olá, Iuri! Gostaria de conversar sobre meu próximo negócio imobiliário.")} target="_blank" rel="noreferrer">Conversar com Iuri</ActionLink>
+            <p className="mt-3 text-xs uppercase text-muted-foreground">Campinas e região</p>
+            <blockquote className="mt-8 border-l border-border pl-7 font-display text-xl leading-relaxed text-muted-foreground sm:text-2xl">“Meu compromisso é compreender cada objetivo e conduzir decisões imobiliárias com proximidade, critério e transparência.”</blockquote>
+            <p className="mt-7 leading-7 text-muted-foreground">São 5 anos de atuação no mercado imobiliário, sendo 3 deles como gerente de imobiliária, à frente de uma equipe de 10 corretores. Essa experiência em gestão, negociação e relacionamento com clientes é o que levo para cada atendimento.</p>
+            <dl className="mt-7 grid grid-cols-3 border-y border-border py-5">
+              <div><dt className="font-display text-2xl sm:text-3xl">5 anos</dt><dd className="mt-1 text-[10px] uppercase leading-4 text-muted-foreground">no mercado imobiliário</dd></div>
+              <div className="border-l border-border px-4"><dt className="font-display text-2xl sm:text-3xl">3 anos</dt><dd className="mt-1 text-[10px] uppercase leading-4 text-muted-foreground">como gerente</dd></div>
+              <div className="border-l border-border pl-4"><dt className="font-display text-2xl sm:text-3xl">10</dt><dd className="mt-1 text-[10px] uppercase leading-4 text-muted-foreground">corretores liderados</dd></div>
+            </dl>
+            <ActionLink className="mt-8" href={whatsappUrl("Olá, Iuri! Gostaria de conversar sobre meu próximo negócio imobiliário.")} target="_blank" rel="noreferrer">Conversar com Iuri</ActionLink>
           </div>
         </div>
       </section>
@@ -145,7 +151,7 @@ function Index() {
         <div className="content-wrap grid gap-10 lg:grid-cols-12"><div className="lg:col-span-8"><p className="eyebrow">Próximo passo</p><h2 className="section-title max-w-4xl">Vamos conversar sobre o seu próximo negócio imobiliário?</h2></div><div className="flex flex-col items-start justify-end lg:col-span-4"><p className="leading-7 text-muted-foreground">Seja para comprar, vender ou alugar, conte comigo para entender o seu objetivo e conduzir os próximos passos.</p><ActionLink className="mt-8" href={whatsappUrl("Olá, Iuri! Quero conversar sobre meu próximo negócio imobiliário.")} target="_blank" rel="noreferrer">Falar com Iuri</ActionLink></div></div>
       </section>
 
-      <footer className="bg-primary pb-24 pt-14 text-primary-foreground lg:pb-12"><div className="content-wrap"><div className="grid gap-10 border-b border-primary-border pb-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr]"><div><Brand inverse /><p className="mt-6 max-w-sm text-sm leading-6 text-primary-muted">Compra, venda e locação com orientação profissional em todas as etapas.</p></div><div><p className="mb-4 text-xs uppercase text-accent">Profissional</p><p className="font-display text-xl">Iuri de Sá</p><p className="mt-2 text-sm text-primary-muted">Corretor de Imóveis<br />CRECI 184010</p></div><div><p className="mb-4 text-xs uppercase text-accent">Contato</p><div className="flex flex-col gap-3 text-sm"><a className="flex items-center gap-2 hover:text-accent" href={whatsappUrl("Olá, Iuri! Gostaria de conversar.")} target="_blank" rel="noreferrer"><BadgeCheck className="size-4" />19 99921-9768</a><a className="flex items-center gap-2 hover:text-accent" href="https://instagram.com/desa.imoveis" target="_blank" rel="noreferrer"><Instagram className="size-4" />@desa.imoveis</a><a className="flex items-center gap-2 break-all hover:text-accent" href="mailto:conato@iuridesa.com.br"><Mail className="size-4 shrink-0" />conato@iuridesa.com.br</a></div></div></div><p className="pt-7 text-xs text-primary-muted">© 2026 Iuri de Sá. Compra • Venda • Locação</p></div></footer>
+      <footer className="bg-primary pb-24 pt-14 text-primary-foreground lg:pb-12"><div className="content-wrap"><div className="grid gap-10 border-b border-primary-border pb-12 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr]"><div><Brand inverse /><p className="mt-6 max-w-sm text-sm leading-6 text-primary-muted">Compra, venda e locação com atendimento pessoal e estrutura profissional.</p></div><div><p className="mb-4 text-xs uppercase text-accent">Profissional</p><p className="font-display text-xl">Iuri de Sá</p><p className="mt-2 text-sm text-primary-muted">Corretor de Imóveis | CRECI 184010<br />Campinas e região</p></div><div><p className="mb-4 text-xs uppercase text-accent">Contato</p><div className="flex flex-col gap-3 text-sm"><a className="flex items-center gap-2 hover:text-accent" href={whatsappUrl("Olá, Iuri! Gostaria de conversar.")} target="_blank" rel="noreferrer"><BadgeCheck className="size-4" />19 99921-9768</a><a className="flex items-center gap-2 hover:text-accent" href="https://instagram.com/desa.imoveis" target="_blank" rel="noreferrer"><Instagram className="size-4" />@desa.imoveis</a><a className="flex items-center gap-2 break-all hover:text-accent" href="mailto:conato@iuridesa.com.br"><Mail className="size-4 shrink-0" />conato@iuridesa.com.br</a></div></div></div><p className="pt-7 text-xs text-primary-muted">© 2026 Iuri de Sá. Compra • Venda • Locação</p></div></footer>
 
       <a className="fixed bottom-4 left-4 right-4 z-50 flex min-h-14 items-center justify-center gap-3 bg-whatsapp px-5 text-sm font-semibold text-whatsapp-foreground shadow-lg lg:hidden" href={whatsappUrl("Olá, Iuri! Gostaria de conversar sobre um imóvel.")} target="_blank" rel="noreferrer"><BadgeCheck className="size-5" />Falar com Iuri no WhatsApp</a>
     </main>
