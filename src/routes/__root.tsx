@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Iuri Luiz | Corretor de Imóveis" },
+      { title: "Iuri de Sá | Corretor de Imóveis" },
       { name: "description", content: "Compra, venda e locação de imóveis com acompanhamento completo e seguro." },
-      { name: "author", content: "Iuri Luiz" },
-      { property: "og:title", content: "Iuri Luiz | Corretor de Imóveis" },
+      { name: "author", content: "Iuri de Sá" },
+      { property: "og:title", content: "Iuri de Sá | Corretor de Imóveis" },
       { property: "og:description", content: "Atendimento imobiliário completo, do primeiro contato à conclusão do negócio." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
