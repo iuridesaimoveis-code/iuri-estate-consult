@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import heroImage from "@/assets/iuri-hero.jpg";
-import portraitAsset from "@/assets/iuri-luiz-retrato.jpg.asset.json";
+import portraitAsset from "@/assets/iuri-de-sa-retrato.jpg.asset.json";
 import { ActionLink } from "@/components/Action";
 
 const WHATSAPP = "5519999219768";
