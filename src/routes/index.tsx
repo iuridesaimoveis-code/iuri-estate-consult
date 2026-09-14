@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import heroImage from "@/assets/iuri-hero.jpg";
-import portraitAsset from "@/assets/iuri-de-sa-retrato.jpg.asset.json";
+import portraitImage from "@/assets/iuri-luiz-retrato.jpg";
 import { ActionLink } from "@/components/Action";
 
 const WHATSAPP = "5519999219768";
@@ -127,7 +127,7 @@ function Index() {
       <section id="sobre" className="section-space">
         <div className="content-wrap grid items-center gap-14 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5 lg:col-start-2">
-            <div className="aspect-[4/5] overflow-hidden bg-secondary"><img src={portraitAsset.url} alt="Iuri de Sá, corretor de imóveis em Campinas e região" width={800} height={800} loading="lazy" className="size-full object-cover object-top grayscale-[10%] contrast-[1.03]" /></div>
+            <div className="aspect-[4/5] overflow-hidden bg-secondary"><img src={portraitImage} alt="Iuri de Sá, corretor de imóveis em Campinas e região" width={1080} height={1124} loading="lazy" className="size-full object-cover object-top grayscale-[10%] contrast-[1.03]" /></div>
             <div className="flex items-center justify-between border-b border-border py-4 text-[10px] font-semibold uppercase text-muted-foreground"><span>Iuri de Sá</span><span>CRECI 184010</span></div>
           </div>
           <div className="lg:col-span-5 lg:col-start-8">
